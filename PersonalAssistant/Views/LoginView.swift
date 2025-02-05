@@ -40,8 +40,10 @@ struct LoginView: View {
                 print("Error: No root view controller found")
                 return
             }
-
-        GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController) { result, error in
+        GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController, hint: nil, additionalScopes: [
+                "https://www.googleapis.com/auth/gmail.readonly",
+                "https://www.googleapis.com/auth/gmail.metadata"
+        ]) { result, error in
             if let error = error {
                 print("Google Sign-In failed: \(error.localizedDescription)")
                 return
