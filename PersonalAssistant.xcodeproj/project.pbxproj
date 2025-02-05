@@ -6,6 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		996898572D51F8F7001F2FF7 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 996898562D51F8F7001F2FF7 /* GoogleSignIn */; };
+		996898592D51F8F7001F2FF7 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 996898582D51F8F7001F2FF7 /* GoogleSignInSwift */; };
+		9968985C2D51F9CF001F2FF7 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 9968985B2D51F9CF001F2FF7 /* Auth */; };
+		9968985E2D51F9CF001F2FF7 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 9968985D2D51F9CF001F2FF7 /* Functions */; };
+		996898602D51F9CF001F2FF7 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 9968985F2D51F9CF001F2FF7 /* PostgREST */; };
+		996898622D51F9CF001F2FF7 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 996898612D51F9CF001F2FF7 /* Realtime */; };
+		996898642D51F9CF001F2FF7 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 996898632D51F9CF001F2FF7 /* Storage */; };
+		998F2F7B2D51FEFB001FE0A2 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 998F2F7A2D51FEFB001FE0A2 /* Supabase */; };
+		99E464BA2D528AF400F3CE22 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99E464B92D528AF000F3CE22 /* test.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		996898392D51F6F1001F2FF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +39,7 @@
 		996898282D51F6EF001F2FF7 /* PersonalAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		996898382D51F6F1001F2FF7 /* PersonalAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		996898422D51F6F1001F2FF7 /* PersonalAssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalAssistantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99E464B92D528AF000F3CE22 /* test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = test.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +65,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				996898572D51F8F7001F2FF7 /* GoogleSignIn in Frameworks */,
+				996898592D51F8F7001F2FF7 /* GoogleSignInSwift in Frameworks */,
+				996898642D51F9CF001F2FF7 /* Storage in Frameworks */,
+				9968985E2D51F9CF001F2FF7 /* Functions in Frameworks */,
+				998F2F7B2D51FEFB001FE0A2 /* Supabase in Frameworks */,
+				996898622D51F9CF001F2FF7 /* Realtime in Frameworks */,
+				9968985C2D51F9CF001F2FF7 /* Auth in Frameworks */,
+				996898602D51F9CF001F2FF7 /* PostgREST in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +96,11 @@
 		9968981F2D51F6EF001F2FF7 = {
 			isa = PBXGroup;
 			children = (
+				99E464B92D528AF000F3CE22 /* test.plist */,
 				9968982A2D51F6EF001F2FF7 /* PersonalAssistant */,
 				9968983B2D51F6F1001F2FF7 /* PersonalAssistantTests */,
 				996898452D51F6F1001F2FF7 /* PersonalAssistantUITests */,
+				998F2F792D51FEFB001FE0A2 /* Frameworks */,
 				996898292D51F6EF001F2FF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +113,13 @@
 				996898422D51F6F1001F2FF7 /* PersonalAssistantUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		998F2F792D51FEFB001FE0A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +142,14 @@
 			);
 			name = PersonalAssistant;
 			packageProductDependencies = (
+				996898562D51F8F7001F2FF7 /* GoogleSignIn */,
+				996898582D51F8F7001F2FF7 /* GoogleSignInSwift */,
+				9968985B2D51F9CF001F2FF7 /* Auth */,
+				9968985D2D51F9CF001F2FF7 /* Functions */,
+				9968985F2D51F9CF001F2FF7 /* PostgREST */,
+				996898612D51F9CF001F2FF7 /* Realtime */,
+				996898632D51F9CF001F2FF7 /* Storage */,
+				998F2F7A2D51FEFB001FE0A2 /* Supabase */,
 			);
 			productName = PersonalAssistant;
 			productReference = 996898282D51F6EF001F2FF7 /* PersonalAssistant.app */;
@@ -195,6 +233,10 @@
 			);
 			mainGroup = 9968981F2D51F6EF001F2FF7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				996898552D51F8F7001F2FF7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				9968985A2D51F9CF001F2FF7 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 996898292D51F6EF001F2FF7 /* Products */;
 			projectDirPath = "";
@@ -212,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E464BA2D528AF400F3CE22 /* test.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +364,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				GIDClientID = "1030619181451-0kfjli8ffimlm1lossgiof70ietise1g.apps.googleusercontent.com";
+				INFOPLIST_FILE = test.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -378,6 +424,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				GIDClientID = "1030619181451-0kfjli8ffimlm1lossgiof70ietise1g.apps.googleusercontent.com";
+				INFOPLIST_FILE = test.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -552,6 +601,68 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		996898552D51F8F7001F2FF7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		9968985A2D51F9CF001F2FF7 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		996898562D51F8F7001F2FF7 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 996898552D51F8F7001F2FF7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		996898582D51F8F7001F2FF7 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 996898552D51F8F7001F2FF7 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		9968985B2D51F9CF001F2FF7 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9968985A2D51F9CF001F2FF7 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		9968985D2D51F9CF001F2FF7 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9968985A2D51F9CF001F2FF7 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		9968985F2D51F9CF001F2FF7 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9968985A2D51F9CF001F2FF7 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		996898612D51F9CF001F2FF7 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9968985A2D51F9CF001F2FF7 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		996898632D51F9CF001F2FF7 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9968985A2D51F9CF001F2FF7 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		998F2F7A2D51FEFB001FE0A2 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9968985A2D51F9CF001F2FF7 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 996898202D51F6EF001F2FF7 /* Project object */;
 }
